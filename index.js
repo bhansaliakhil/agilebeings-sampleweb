@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 //Set static folder for static websites
-app.use(express.static(path.join(__dirname, "public"));
+app.use(express.static(path.join(__dirname, "public")));
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
