@@ -1,9 +1,10 @@
 const express = require('express');
+const path = require('path');
+
 const app = express();
 
 app.get('/', (req, res) => {
-  const name = process.env.NAME || 'Akhil, you are live today on 30th of December 2020!';
-  res.send(`Hello ${name}!`);
+    res.sendFile(path.join(__dirname, 'public', 'index.html')); 
 });
 
 const port = process.env.PORT || 8080;
