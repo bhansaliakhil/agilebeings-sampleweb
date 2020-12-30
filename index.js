@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  const name = process.env.NAME || 'Akhil, you are live!';
+  const name = process.env.NAME || 'Akhil, you are live today on 30th of December 2020!';
   res.send(`Hello ${name}!`);
 });
 
