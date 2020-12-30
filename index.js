@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 //importing a json file named Members.js using following command.
-const members = require ('./Members')
+const members = require('./Members');
 
 const app = express();
 
